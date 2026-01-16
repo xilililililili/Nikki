@@ -104,8 +104,8 @@ proxy-groups:
   - {name: 🎵 TikTok, type: select, proxies: [♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, 🌐 全部节点]}
   - {name: 📲 Telegram, type: select, proxies: [♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🌐 全部节点]}
   - {name: 🎥 NETFLIX, type: select, proxies: [♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动]}
-  - {name: 💶 PayPal, type: select, proxies: 🇺🇲 美国节点}
-  - {name: 🐟 漏网之鱼, type: select, proxies: ♻️ 自动选择}
+  - {name: 💶 PayPal, type: select, proxies: [🇺🇲 美国节点]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [♻️ 自动选择]}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|韩|新|日)).)*$"}
   - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}

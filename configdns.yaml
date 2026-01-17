@@ -42,7 +42,7 @@ external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-p
 
 # 嗅探（fakeip下其实可以不用嗅探）
 sniffer:
-  enable: true
+  enable: false
   sniff:
     HTTP:
       ports: [80, 8080-8880]
@@ -62,7 +62,7 @@ tun:
   stack: mixed
   dns-hijack: ["any:53", "tcp://any:53"]
   #使用nikki，混入全部不修改的情况，开启接口指定为nikki
-  #device: nikki
+  device: nikki
   #使用仅内核自行修改下面三项为true
   auto-route: true
   auto-redirect: true
@@ -140,12 +140,12 @@ rules:
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,onedrive_domain,🐬 OneDrive
   - RULE-SET,microsoft_domain,🪟 Microsoft
-  - RULE-SET,apple_domain,直连
+  - RULE-SET,apple_domain,♻️ 美国自动
   - RULE-SET,tiktok_domain,🎵 TikTok
   - RULE-SET,telegram_domain,📲 Telegram
   - RULE-SET,netflix_domain,🎥 NETFLIX
   - RULE-SET,paypal_domain,💶 PayPal
-  - RULE-SET,apple_ip,直连
+  - RULE-SET,apple_ip,♻️ 美国自动
   - RULE-SET,google_ip,🍀 Google
   - RULE-SET,netflix_ip,🎥 NETFLIX
   - RULE-SET,telegram_ip,📲 Telegram
